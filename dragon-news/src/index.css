@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+@plugin 'daisyui';
+h1{
+  font-size: 4xl;
+  font-weight: bold;
+}
+h2{
+  font-size: 2xl;
+  font-weight:bold;
+}
+h3{
+  font-size: xl;
+  font-weight: bold;
+}
