@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router";
 import NewsCard from "../Components/NewsCard";
-import { SiGnome } from "react-icons/si";
+// import { SiGnome } from "react-icons/si";
 
 const Category = () => {
   const { id } = useParams();

@@ -1,10 +1,10 @@
 import React from "react";
 import { CiBookmark } from "react-icons/ci";
 import { IoShareSocialOutline } from "react-icons/io5";
+import { Link } from "react-router";
 
 const NewsCard = ({ singleNews }) => {
-  console.log(singleNews);
-  const { title, author, thumbnail_url, details } = singleNews;
+  const { id, title, author, thumbnail_url, details } = singleNews;
   return (
     <div className="border border-base-300 mb-4 space-y-4 pb-4">
       {/* author */}
@@ -26,7 +26,12 @@ const NewsCard = ({ singleNews }) => {
         <h1>{title}</h1>
         <img className="rounded-lg" src={thumbnail_url} alt="" />
         <p>{details}</p>
-        <button className="text-amber-500 font-bold text-lg">Read More</button>
+        <Link
+          to={`/newsDetails/${id}`}
+          className="text-amber-500 font-bold text-lg"
+        >
+          Read More
+        </Link>
         <hr className="border-base-300" />
         {/* Rating */}
         <div>
